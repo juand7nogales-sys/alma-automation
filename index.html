@@ -1,187 +1,97 @@
-export default function AlmaAutomationLanding() {
-  return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.18),transparent_28%),radial-gradient(circle_at_left,rgba(168,85,247,0.16),transparent_30%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
-              <div className="mb-5 inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1.5 text-sm text-cyan-200">
-                Automatización · IA · Integraciones
-              </div>
-              <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-                Alma Automation
-                <span className="block text-slate-300">Automatizamos procesos con IA para que tu negocio venda más y pierda menos tiempo.</span>
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-                Diseñamos soluciones para atención al cliente, captación de leads, bots de WhatsApp e Instagram, integraciones con APIs, paneles de seguimiento y flujos internos con n8n y Python.
-              </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="https://wa.me/59897999540"
-                  className="rounded-2xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5"
-                >
-                  Hablar por WhatsApp
-                </a>
-                <a
-                  href="#servicios"
-                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-semibold text-white transition hover:bg-white/10"
-                >
-                  Ver servicios
-                </a>
-              </div>
-              <div className="mt-10 grid max-w-xl grid-cols-3 gap-4 text-sm text-slate-300">
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-2xl font-bold text-white">24/7</div>
-                  <div className="mt-1 text-slate-400">Atención automatizada</div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-2xl font-bold text-white">+Velocidad</div>
-                  <div className="mt-1 text-slate-400">Menos tareas manuales</div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <div className="text-2xl font-bold text-white">IA + APIs</div>
-                  <div className="mt-1 text-slate-400">Soluciones conectadas</div>
-                </div>
-              </div>
-            </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alma Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: white;
+      text-align: center;
+    }
 
-            <div className="relative">
-              <div className="absolute -left-6 top-10 h-40 w-40 rounded-full bg-cyan-400/20 blur-3xl" />
-              <div className="absolute -bottom-6 right-0 h-48 w-48 rounded-full bg-fuchsia-500/20 blur-3xl" />
-              <div className="relative rounded-[28px] border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur">
-                <div className="rounded-[24px] border border-white/10 bg-slate-900 p-5">
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                    <div>
-                      <div className="text-sm text-slate-400">Flujo de ejemplo</div>
-                      <div className="text-lg font-semibold">Captación y respuesta automática</div>
-                    </div>
-                    <div className="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-medium text-emerald-300">
-                      Activo
-                    </div>
-                  </div>
-                  <div className="space-y-4 py-5">
-                    <div className="rounded-2xl border border-white/10 bg-slate-800/60 p-4">
-                      <div className="text-sm text-slate-400">Entrada</div>
-                      <div className="mt-1 font-medium">Cliente escribe por WhatsApp o Instagram</div>
-                    </div>
-                    <div className="flex justify-center text-cyan-300">↓</div>
-                    <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-4">
-                      <div className="text-sm text-cyan-200">Automatización</div>
-                      <div className="mt-1 font-medium">IA clasifica, responde y detecta intención</div>
-                    </div>
-                    <div className="flex justify-center text-cyan-300">↓</div>
-                    <div className="grid gap-4 md:grid-cols-2">
-                      <div className="rounded-2xl border border-white/10 bg-slate-800/60 p-4">
-                        <div className="text-sm text-slate-400">Acción 1</div>
-                        <div className="mt-1 font-medium">Crear lead en base de datos</div>
-                      </div>
-                      <div className="rounded-2xl border border-white/10 bg-slate-800/60 p-4">
-                        <div className="text-sm text-slate-400">Acción 2</div>
-                        <div className="mt-1 font-medium">Notificar por email o Slack</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
-      <section id="servicios" className="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <div className="max-w-2xl">
-          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Servicios</div>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">Soluciones hechas para ahorrar tiempo, ordenar operaciones y mejorar la respuesta al cliente.</h2>
-        </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {[
-            {
-              title: 'Bots de WhatsApp e Instagram',
-              text: 'Respuestas automáticas, calificación de leads y seguimiento comercial sin depender de atención manual constante.',
-            },
-            {
-              title: 'Automatizaciones con n8n',
-              text: 'Conectamos formularios, CRMs, hojas de cálculo, emails, APIs y sistemas internos en un solo flujo.',
-            },
-            {
-              title: 'Integraciones con APIs',
-              text: 'Unimos herramientas distintas para eliminar carga operativa y errores de copia manual.',
-            },
-            {
-              title: 'Python + IA aplicada',
-              text: 'Lógica de negocio, validaciones, clasificación inteligente y decisiones asistidas por IA donde realmente aporta valor.',
-            },
-          ].map((item) => (
-            <div key={item.title} className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/10">
-              <div className="mb-4 h-11 w-11 rounded-2xl bg-cyan-400/15" />
-              <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="mt-3 leading-7 text-slate-400">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+    h1 {
+      font-size: 48px;
+    }
 
-      <section className="mx-auto max-w-7xl px-6 py-8 md:px-10 md:py-16">
-        <div className="grid gap-6 rounded-[32px] border border-white/10 bg-white/5 p-8 md:grid-cols-3">
-          <div>
-            <div className="text-sm uppercase tracking-[0.2em] text-cyan-300">Cómo trabajamos</div>
-            <h2 className="mt-3 text-3xl font-bold">De la idea al sistema funcionando.</h2>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <div className="text-sm text-cyan-300">01 · Diagnóstico</div>
-            <div className="mt-2 text-lg font-semibold">Entendemos el proceso</div>
-            <p className="mt-3 text-slate-400">Revisamos dónde se pierde tiempo, dónde hay errores y qué se puede automatizar primero.</p>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5">
-            <div className="text-sm text-cyan-300">02 · Implementación</div>
-            <div className="mt-2 text-lg font-semibold">Construimos el flujo</div>
-            <p className="mt-3 text-slate-400">Creamos el bot, las integraciones y la lógica para que el sistema opere de punta a punta.</p>
-          </div>
-        </div>
-      </section>
+    p {
+      color: #94a3b8;
+      font-size: 18px;
+    }
 
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <div className="grid gap-6 lg:grid-cols-2">
-          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-cyan-400/10 to-fuchsia-500/10 p-8">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Ideal para</div>
-            <h2 className="mt-3 text-3xl font-bold">Negocios que ya reciben mensajes, consultas o pedidos y quieren ordenarlos.</h2>
-            <ul className="mt-6 space-y-4 text-slate-300">
-              <li>• Empresas de servicios que responden por WhatsApp</li>
-              <li>• Emprendimientos que necesitan filtrar clientes potenciales</li>
-              <li>• Operaciones con tareas repetitivas entre varias herramientas</li>
-              <li>• Equipos que quieren más control y menos trabajo manual</li>
-            </ul>
-          </div>
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-          <div className="rounded-[32px] border border-white/10 bg-white/5 p-8">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">CTA</div>
-            <h2 className="mt-3 text-3xl font-bold">¿Quieres automatizar parte de tu negocio?</h2>
-            <p className="mt-4 max-w-xl leading-7 text-slate-400">
-              Podemos revisar tu caso y proponerte un flujo simple para empezar rápido, con foco en resultados reales y sin sobrecomplicar la operación.
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="https://wa.me/59800000000"
-                className="rounded-2xl bg-white px-6 py-3 text-center font-semibold text-slate-950 transition hover:-translate-y-0.5"
-              >
-                Solicitar propuesta
-              </a>
-              <a
-                href="mailto:contacto@almaautomation.com"
-                className="rounded-2xl border border-white/15 bg-transparent px-6 py-3 text-center font-semibold text-white transition hover:bg-white/10"
-              >
-                Enviar email
-              </a>
-            </div>
-            <p className="mt-5 text-sm text-slate-500">Reemplaza el número de WhatsApp y el email por los tuyos antes de publicar.</p>
-          </div>
-        </div>
-      </section>
+    .btn-whatsapp {
+      background: #22c55e;
+      color: black;
+    }
 
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500 md:px-10">
-        © 2026 Alma Automation · Automatización, IA y sistemas conectados.
-      </footer>
+    .btn-secondary {
+      border: 1px solid #334155;
+      color: white;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Alma Automation 🤖</h1>
+  <p>Automatizamos procesos con IA para que tu negocio venda más y pierda menos tiempo.</p>
+
+  <a class="btn btn-whatsapp" href="https://wa.me/59897999540">Hablar por WhatsApp</a>
+  <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🤖 Bots</h3>
+      <p>WhatsApp e Instagram automatizados</p>
     </div>
-  );
-}
+
+    <div class="card">
+      <h3>⚙️ Automatización</h3>
+      <p>Flujos con n8n y APIs</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 IA + Python</h3>
+      <p>Decisiones inteligentes en tus procesos</p>
+    </div>
+  </div>
+
+  <h2 id="servicios" style="margin-top:60px;">Servicios</h2>
+  <p>Automatizamos atención al cliente, ventas y operaciones.</p>
+
+</div>
+
+</body>
+</html>
